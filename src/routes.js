@@ -10,6 +10,7 @@ import NotFoundView from 'src/views/errors/NotFoundView';
 import ProductListView from 'src/views/product/ProductListView';
 import RegisterView from 'src/views/auth/RegisterView';
 import SettingsView from 'src/views/settings/SettingsView';
+import LadingView from "src/views/landing"
 
 const routes = [
   {
@@ -28,6 +29,7 @@ const routes = [
     path: '/',
     element: <MainLayout />,
     children: [
+      { path: 'landing', element: <LadingView /> },
       { path: 'login', element: <LoginView /> },
       { path: 'register', element: <RegisterView /> },
       { path: '404', element: <NotFoundView /> },

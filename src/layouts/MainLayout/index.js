@@ -34,14 +34,15 @@ const MainLayout = () => {
 
   return (
     <div className={classes.root}>
-      <TopBar />
+       <Outlet />
+     {/*  <TopBar />
       <div className={classes.wrapper}>
         <div className={classes.contentContainer}>
           <div className={classes.content}>
             <Outlet />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
