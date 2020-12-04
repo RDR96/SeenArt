@@ -1,7 +1,9 @@
 import React from "react"
-import {Box, makeStyles} from "@material-ui/core"
-import Page from 'src/components/Page';
+import {makeStyles} from "@material-ui/core"
+
 import Header from "src/components/landingHeader"
+import FirstContainer from "./sections/firstContainer"
+import SecondContainer from "./sections/secondContainer"
 
 
 const useStyles = makeStyles((theme) => ({
@@ -19,6 +21,8 @@ const Landing = () => {
     return (
       <div className={classes.root}>
         <Header />
+        <FirstContainer /> 
+        <SecondContainer />
       </div>        
     )
 }

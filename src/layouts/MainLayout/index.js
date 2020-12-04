@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.default,
     display: 'flex',
     height: '100%',
-    overflow: 'hidden',
+    overflow: 'scroll',
     width: '100%'
   },
   wrapper: {
