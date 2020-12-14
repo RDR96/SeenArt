@@ -11,6 +11,7 @@ import ProductListView from 'src/views/product/ProductListView';
 import RegisterView from 'src/views/auth/RegisterView';
 import SettingsView from 'src/views/settings/SettingsView';
 import LadingView from "src/views/landing"
+import ContactView from "src/views/Contact"
 
 const routes = [
   {
@@ -28,8 +29,12 @@ const routes = [
   {
     path: '/',
     element: <MainLayout />,
+
+
+
     children: [
       { path: 'landing', element: <LadingView /> },
+      { path: 'contact', element: <ContactView /> },
       { path: 'login', element: <LoginView /> },
       { path: 'register', element: <RegisterView /> },
       { path: '404', element: <NotFoundView /> },

@@ -1,0 +1,54 @@
+.main-title-container {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.main-title-title-container {
+  background-color: #075f85;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  padding: 30px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.main-title-container-image-background-container {
+  width: 100%;
+  background-image: url('../../assets/images/agent_background.jpg');
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 500px;
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-title-content-container {
+  position: absolute;
+  background: transparent;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

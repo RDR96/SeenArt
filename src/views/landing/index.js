@@ -4,7 +4,10 @@ import {makeStyles} from "@material-ui/core"
 import Header from "src/components/landingHeader"
 import FirstContainer from "./sections/firstContainer"
 import SecondContainer from "./sections/secondContainer"
-
+import ThirdContainer from "./sections/thirdContainer"
+import AgentContainer from "./sections/fourthContainer"
+import NewsContainer from "./sections/newsContainer"
+import Footer from "src/components/footer"
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -23,6 +26,10 @@ const Landing = () => {
         <Header />
         <FirstContainer /> 
         <SecondContainer />
+        <ThirdContainer/>
+        <AgentContainer />
+        <NewsContainer />
+        <Footer />
       </div>        
     )
 }

@@ -1,0 +1,115 @@
+.agent-container {
+  width: 100%;
+  height: 670px;
+  position: relative;
+}
+
+.agent-container-section-container {
+  width: 50%;
+  padding: 20px;
+  background-color: #075f85;
+}
+
+.agent-container-image-container {
+  width: 100%;
+  background-image: url('../../../assets/images/agent_background.jpg');
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 500px;
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.agent-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.agent-container-content-container {
+  position: absolute;
+  background: transparent;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.agent-container-label-container {
+  padding: 20px;
+  height: 70px;
+  background-color: #075f85;
+  border-radius: 50px;
+  user-select: none;
+}
+
+.agent-container-label-section {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.agent-container-image-background-container {
+  background-image: url('../../../assets/images/agent_background.jpg');
+
+  /* Add the blur effect */
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+
+  /* Full height */
+  height: 670px;
+  /* Center and scale the image nicely */
+
+  /* Add the blur effect */
+
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.agent-image {
+  object-fit: contain;
+  width: 70%;
+}
+
+.agent-container-agents-images-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 380px) {
+  .agent-image {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .agent-container-agents-images-container {
+    flex-direction: row;
+  }
+  .agent-image {
+    width: 70%;
+  }
+}

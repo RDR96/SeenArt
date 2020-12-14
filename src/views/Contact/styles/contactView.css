@@ -1,0 +1,24 @@
+.contact-view-container {
+  width: 100%;
+}
+
+.contact-view-form-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-view-form-label-container {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.contact-view-form-content-container {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}

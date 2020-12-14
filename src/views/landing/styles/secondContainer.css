@@ -10,7 +10,6 @@
   padding: 30px;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
 }
 
 .landing-second-first-container {
@@ -23,12 +22,12 @@
 }
 
 .landing-second-button {
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.25) !important;
 }
 
 .landing-second-second-container {
   display: flex;
   flex-direction: column;
-  height: 100px;
 }
 
 @media (min-width: 768px) {
@@ -40,7 +39,6 @@
 
   .landing-second-second-container {
     flex-direction: row;
-    height: 100px;
   }
 
   .landing-second-button {
@@ -50,6 +48,6 @@
   .second-container-card {
     justify-content: space-between;
 
-    height: 350px;
+    height: 420px;
   }
 }

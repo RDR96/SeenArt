@@ -9,12 +9,12 @@ const SecondContainer = () => {
         <div className="landing-second-container">
             <div className="landing-second-first-container">
                 <Button variant="contained" color="primary" className="landing-second-button">
-                <Typography color="textSecondary">
+                <Typography variant="h3" color="textSecondary">
                     ¿Cómo donar?
                     </Typography>
                 </Button>
                 <Button variant="contained" color="primary" className="landing-second-button">
-                    <Typography color="textSecondary">
+                    <Typography variant="h3" color="textSecondary">
                         Conviertete en voluntario
                     </Typography>
                 </Button>

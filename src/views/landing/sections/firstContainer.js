@@ -15,7 +15,9 @@ const FirstContainer = () => {
                 La fundación Seen Art nace en Holanda en 2008 con el objetivo de potenciar el arte y la música.
             </Typography>            
             <Button variant="contained" color="primary" className="landing-first-button">
-                Galeria
+                <Typography color="textSecondary">
+                    Galeria
+                </Typography>
             </Button>
         </div>
     )
