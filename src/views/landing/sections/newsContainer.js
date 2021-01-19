@@ -1,11 +1,8 @@
 import React from "react"
-import {Typography, makeStyles} from "@material-ui/core"
+import {Typography} from "@material-ui/core"
 import "../styles/newsContainer.css"
 import NewsCard from "../cards/newsCard"
 
-const useStyles  = makeStyles(() => ({
-    
-}))
 
 
 const NewsContainer  = () => {

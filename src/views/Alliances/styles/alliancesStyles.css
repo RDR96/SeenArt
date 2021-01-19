@@ -1,0 +1,44 @@
+.alliances-view-container {
+  width: 100%;
+}
+
+.alliances-view-content-container {
+  background: #e6b802;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  align-items: center;
+  overflow-x: scroll;
+
+  height: 400px;
+  padding: 10px;
+}
+
+.alliance-view-image-container {
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.alliance-view-card-container {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .alliances-view-content-container {
+    flex-wrap: wrap;
+
+    width: 100%;
+    align-items: center;
+    overflow-x: unset;
+    justify-content: center;
+
+    height: auto;
+    padding: 50px;
+  }
+}

@@ -4,6 +4,7 @@ import Header from "src/components/landingHeader"
 import Footer from "src/components/footer"
 import MainTitleContainer from "src/components/mainTitleContainer"
 import ContactForm from "./cards/contactForm"
+import ContactInfo from "./cards/contactInfo"
 import "./styles/contactView.css"
 
 const Contact = () => {
@@ -12,6 +13,7 @@ const Contact = () => {
             <Header />
             <MainTitleContainer title="Contactos"/>
             <ContactForm />
+            <ContactInfo />
             <Footer />
         </div>
     )

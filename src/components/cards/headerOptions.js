@@ -1,40 +1,58 @@
 import React from "react"
 import "../styles/landingHeader.css"
-import {Typography} from "@material-ui/core"
+import {Typography, Button} from "@material-ui/core"
+import { useNavigate, useLocation  } from "react-router-dom";
 
 const HeaderOptions = () => {
+    const navigate = useNavigate();
+    const location = useLocation();
+    
+    const handleNavigation  =(routeName) => {
+        navigate(routeName);
+    }
+    
     return (
         <>  
-       <div className="header-option">
+       
+            <Button className={`header-option ${location.pathname.replace("/","") === "about" ? "header-option-selected" : ""}`} onClick={() => handleNavigation("/about")}>
                     <Typography >
                         Conocenos
                         </Typography>
-                </div>
-                <div className="header-option">
+                        </Button>                                
+                <Button className={`header-option ${location.pathname.replace("/","") === "profiles" ? "header-option-selected" : ""}`} onClick={() => handleNavigation("/profiles")}>
                     <Typography >
                         Perfiles
                         </Typography>
-                </div>
-                <div className="header-option">
+                        </Button>
+                
+                
+                <Button className={`header-option ${location.pathname.replace("/","") === "projects" ? "header-option-selected" : ""}`} onClick={() => handleNavigation("/projects")}>
                     <Typography >
                         Proyectos
                         </Typography>
-                </div>
-                <div className="header-option">
+                        </Button>
+                
+                
+                <Button className={`header-option ${location.pathname.replace("/","") === "news" ? "header-option-selected" : ""}`} onClick={() => handleNavigation("/news")}>
                     <Typography >
                         Noticias
                         </Typography>
-                </div>
-                <div className="header-option">
+                        </Button>
+                
+                
+                <Button className={`header-option ${location.pathname.replace("/","") === "alliances" ? "header-option-selected" : ""}`} onClick={() => handleNavigation("/alliances")}>
                     <Typography >
                         Alianzas
                         </Typography>
-                </div>
-                <div className="header-option">
+                        </Button>
+                
+                        <Button className={`header-option ${location.pathname.replace("/","") === "sport" ? "header-option-selected" : ""}`} onClick={() => handleNavigation("/sport")}>
                     <Typography >
                         Futbol ESA/Holanda
                         </Typography>
-                </div>
+                        </Button>
+                        
+                
         </>
     )
 }

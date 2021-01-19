@@ -4,7 +4,11 @@
   justify-content: space-between;
   background-color: white;
   align-items: center;
-  position: relative;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  -webkit-box-shadow: 0px 6px 9px -4px rgba(0, 0, 0, 0.58);
+  box-shadow: 0px 6px 9px -4px rgba(0, 0, 0, 0.58);
 }
 
 .header-yellow-dot {
@@ -33,13 +37,23 @@
   justify-content: space-around;
 }
 
+.header-option-button {
+  padding: 20px !important;
+}
+
+.header-option-selected {
+  background-color: #e6b802 !important;
+}
+
 .header-option {
-  padding: 20px;
-  display: flex;
-  align-items: center;
+  flex: 1 !important;
+  justify-content: center !important;
+  padding: 20px !important;
+  display: flex !important;
+  align-items: center !important;
   background-color: white;
-  transition: animation;
-  cursor: pointer;
+  transition: animation !important;
+  cursor: pointer !important;
 }
 
 .header-option:hover {

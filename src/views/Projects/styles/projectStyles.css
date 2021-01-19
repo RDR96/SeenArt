@@ -1,0 +1,66 @@
+.project-view-container {
+  width: 100%;
+}
+
+.project-view-content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-view-card-container {
+  width: 100%;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.project-view-card-image-container {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.project-view-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-view-name-container {
+  position: absolute;
+  padding: 10px;
+  bottom: 20px;
+  right: 0;
+  align-items: center;
+  /* justify-content: center; */
+  display: flex;
+  flex-direction: column;
+}
+
+.project-view-project-more-button {
+  background: #075f85 !important;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25) !important;
+  border-radius: 34px !important;
+  padding: 10px !important;
+}
+
+.project-view-name-label-container {
+  background: #e6b802;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.project-view-description-container {
+  width: 100%;
+
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .project-view-content-container {
+    flex-direction: row;
+  }
+}

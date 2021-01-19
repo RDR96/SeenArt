@@ -1,6 +1,6 @@
 import React from "react"
 import "../styles/agentContainer.css"
-import {Button, Typography, makeStyles} from "@material-ui/core"
+import {Typography, makeStyles} from "@material-ui/core"
 
 const useStyles  = makeStyles(() => ({
     agentNameLabel: {
@@ -28,14 +28,14 @@ const FourthContainer = () =>  {
                     <Typography variant="h3" color="textSecondary" className={classes.agentNameLabel}>
                         Peter Kingleman
                     </Typography>
-                    <img src={require("src/assets/images/agent_1.png")} className="agent-image" />
+                    <img alt="agent_1" src={require("src/assets/images/agent_1.png")} className="agent-image" />
                   
                     </div>
                     <div className="agent-info-container">
                     <Typography variant="h3" color="textSecondary" className={classes.agentNameLabel}>
                         Marie Vigil
                     </Typography>
-                    <img src={require("src/assets/images/agent_2.png")} className="agent-image" />
+                    <img alt="agent_1" src={require("src/assets/images/agent_2.png")} className="agent-image" />
                   
                     </div>
                     

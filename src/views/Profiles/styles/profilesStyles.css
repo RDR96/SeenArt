@@ -1,0 +1,57 @@
+.profiles-view-container {
+  width: 100%;
+}
+
+.profiles-view-grid-container {
+  padding: 50px !important;
+}
+
+.profiles-view-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.profiles-view-card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profiles-view-card-info-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.profiles-view-image-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.profiles-view-social-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.profiles-view-card-image {
+  object-fit: contain;
+}
+
+@media (min-width: 790px) {
+  .profiles-view-card-container {
+    flex-direction: row;
+    align-items: unset;
+  }
+
+  .profiles-view-card-info-container {
+    padding: 10px;
+  }
+}

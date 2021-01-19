@@ -12,6 +12,13 @@ import RegisterView from 'src/views/auth/RegisterView';
 import SettingsView from 'src/views/settings/SettingsView';
 import LadingView from "src/views/landing"
 import ContactView from "src/views/Contact"
+import AboutView from "src/views/About"
+import GalleryView from "src/views/Gallery"
+import ProfilesView from "src/views/Profiles"
+import ProjectsView from "src/views/Projects"
+import NewsView from "src/views/News"
+import AlliancesView from "src/views/Alliances"
+import SportView from "src/views/Sport"
 
 const routes = [
   {
@@ -28,13 +35,23 @@ const routes = [
   },
   {
     path: '/',
+    
     element: <MainLayout />,
 
 
 
     children: [
       { path: 'landing', element: <LadingView /> },
+      {path: 'about', element: <AboutView />},
       { path: 'contact', element: <ContactView /> },
+      { path: 'gallery', element: <GalleryView /> },
+      { path: 'profiles', element: <ProfilesView /> },
+      { path: 'projects', element: <ProjectsView /> },
+      { path: 'news', element: <NewsView /> },            
+      { path: 'alliances', element: <AlliancesView /> },            
+      { path: 'sport', element: <SportView /> },            
+      
+      
       { path: 'login', element: <LoginView /> },
       { path: 'register', element: <RegisterView /> },
       { path: '404', element: <NotFoundView /> },

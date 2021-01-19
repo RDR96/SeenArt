@@ -1,20 +1,12 @@
 import React from "react"
-import {Button, Typography, makeStyles} from "@material-ui/core"
+import {Button, Typography} from "@material-ui/core"
 import ProjectCard  from "../cards/projectCard"
 import {ReactComponent as IdeaIcon} from 'src/assets/svgs/idea.svg';
 import "../styles/thirdContainer.css"
 
-const useStyles = makeStyles(() => ({
-    projectButton: {
-        width: "50%",
-        borderRadius: 20,
-        padding: 10
-        
-    }
-}))
 
 const ThirdContainer = () => {
-    const classes = useStyles()
+    
     return (
         <div className="third-container">
             <div className="third-container-first-container">                                

@@ -1,5 +1,6 @@
 import React from "react"
-import {Typography, makeStyles} from "@material-ui/core"
+import {Typography, makeStyles, Grid} from "@material-ui/core"
+import FormContact from "./formContactFormat"
 import "../styles/contactView.css"
 
 const useStyles = makeStyles(theme => ({
@@ -19,14 +20,17 @@ const ContactForm = () => {
     const classes = useStyles()
     return (
         <div className="contact-view-form-container">
-            <div className="contact-view-form-label-container">
+            <Grid container spacing={2}>
+                <Grid item xs={12} md={6}>
                 <Typography className={classes.labelText} variant="h4" color="secondary">
                     Escribenos
                 </Typography>
-            </div>
-            <div className="contact-view-form-content-container">
-                
-            </div>
+                </Grid>
+                <Grid item xs={12} md={6}>
+                <FormContact />
+                </Grid>
+            </Grid>
+           
         </div>
     )
 }
