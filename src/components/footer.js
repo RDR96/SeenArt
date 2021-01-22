@@ -1,5 +1,5 @@
 import React from "react"
-import {Typography, makeStyles, Divider} from "@material-ui/core"
+import {Typography, makeStyles, Divider, Link} from "@material-ui/core"
 import CallIcon from '@material-ui/icons/Call';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -102,10 +102,15 @@ const MainFooter = () => {
                     Siguenos
                 </Typography>
                 <div className="contact-section-social-icons-content">          
-                    
+                <Link href="https://www.facebook.com/fundacionseenartsv/">
                     <FacebookIcon fontSize={"large"} className="contact-section-icon"/>
-                    <InstagramIcon fontSize={"large"} className="contact-section-icon"/>
+                    </Link>
+                    <Link href="https://www.instagram.com/fundacion_seenart/">
+                      <InstagramIcon fontSize={"large"} className="contact-section-icon"/>
+                    </Link>
+                    <Link href="https://twitter.com/fundacionseen?lang=es">
                     <TwitterIcon fontSize={"large"} className="contact-section-icon"/>
+                    </Link>
                     </div>
                 </div>
                 

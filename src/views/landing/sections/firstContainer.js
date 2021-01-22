@@ -1,10 +1,16 @@
 import { Button, Typography } from "@material-ui/core"
 import React from "react"
+import {useNavigate} from "react-router-dom"
 import "../styles/firstContainer.css"
 
 
 
 const FirstContainer = () => {
+    const navigate = useNavigate()
+    const handleNavigation = () => {
+        navigate("/gallery")
+    }
+
     return (
         <div className="landing-first-container">
             <div className="landing-first-image-mask"/>         
@@ -14,7 +20,7 @@ const FirstContainer = () => {
             <Typography variant={"h3"} className="landing-first-text">
                 La fundación Seen Art nace en Holanda en 2008 con el objetivo de potenciar el arte y la música.
             </Typography>            
-            <Button variant="contained" color="primary" className="landing-first-button">
+            <Button onClick={handleNavigation} variant="contained" color="primary" className="landing-first-button">
                 <Typography color="textSecondary">
                     Galeria
                 </Typography>

@@ -18,9 +18,11 @@ const NewsContainer  = () => {
             <div className="news-container-news-container">
                 <NewsCard title="Visita a Valle del Sol en Apopa"/>
                 <div className="news-container-read-more">
+                    <a href="/news">
                     <Typography variant="h4">
                         Leer más +
                     </Typography>
+                    </a>
                 </div>
                 <NewsCard title="Celebración Día del Rey"/>                
             </div>

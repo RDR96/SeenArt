@@ -11,6 +11,11 @@ import {Menu as MenuIcon} from "@material-ui/icons"
 const useStyles = makeStyles(theme => ({
     optionSelected: {
         backgroundColor: "#e6b802"
+    },
+    centeredContainer: {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
     }
 }))
 
@@ -31,10 +36,14 @@ const LandingHeader = () => {
 
     return (
         <div className="header-container">
+            <div className={classes.centeredContainer}>
+                <a href="/landing" className={classes.centeredContainer}>
             <SeenArtLogo />
             <span className="header-logo-text">
                 EEN ART
             </span>
+            </a>
+            </div>
             <MediumYellowDot className="header-yellow-dot" />
             <MediumBlueDot className="header-blue-dot"/>
             <div className="header-options-container">
