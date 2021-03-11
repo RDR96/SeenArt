@@ -1,7 +1,8 @@
-import React from "react"
-import {Typography, makeStyles, Link} from "@material-ui/core"
-import TwitterIcon from '@material-ui/icons/Twitter';
+import {Link, Typography, makeStyles} from "@material-ui/core"
+
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import React from "react"
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 const useStyles = makeStyles(theme => ({
     labelText: {
@@ -20,17 +21,17 @@ const useStyles = makeStyles(theme => ({
     }
 }))
 
-const ProfileCard = ({image, name, description}) => {
+const ProfileCard = ({image, name, description, twitter,linkedin }) => {
     const classes = useStyles()
     return(
         <div className="profiles-view-card-container">
             <div className="profiles-view-image-container">
             <img alt={name} src={image} className="profiles-view-card-image"/>
             <div className="profiles-view-social-container">
-                <Link href="http://www.youtube.com">
+                <Link href={twitter}>
                     <TwitterIcon className={classes.icon}/>
                 </Link>
-                <Link href="http://www.youtube.com">
+                <Link href={linkedin}>
                     <LinkedInIcon className={classes.icon}/>
                 </Link>                
             </div>
