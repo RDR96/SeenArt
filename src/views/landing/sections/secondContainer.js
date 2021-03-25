@@ -1,8 +1,8 @@
-import React from "react"
-import MissionCard from "../cards/missionCard"
-import {Button, Typography} from "@material-ui/core"
-import {ReactComponent as MissionIcon} from 'src/assets/svgs/missionIcon.svg';
 import "../styles/secondContainer.css"
+
+import {Button, Typography} from "@material-ui/core"
+
+import React from "react"
 
 const SecondContainer = () => {
     return (
