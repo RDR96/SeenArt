@@ -19,17 +19,7 @@ const SecondContainer = () => {
                     </Typography>
                 </Button>
             </div>
-            {/* <div className="landing-second-second-container">
-                <MissionCard  style={{backgroundColor:"#07435E"} } title="Mision" description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.">
-                    <MissionIcon />
-                    </MissionCard>
-                <MissionCard  style={{backgroundColor:"#10698F"} } title="Vision" description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.">
-                    <MissionIcon />
-                    </MissionCard>
-                <MissionCard  style={{backgroundColor:"#2387B2"} } title="Valores" description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.">
-                <MissionIcon />
-                    </MissionCard>
-            </div>             */}
+            
         </div>
     )
 }
