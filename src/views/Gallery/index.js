@@ -1,11 +1,12 @@
+import './styles/galleryStyles.css';
+
 import React, { useEffect, useState } from 'react';
 
-import Header from 'src/components/landingHeader';
 import Footer from 'src/components/footer';
+import Header from 'src/components/landingHeader';
 import ImageCard from './cards/imageCard';
 import MainTitleContainer from 'src/components/mainTitleContainer';
 import Services from 'src/services';
-import './styles/galleryStyles.css';
 
 const Gallery = () => {
   const [images, setImages] = useState([]);
