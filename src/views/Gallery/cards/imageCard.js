@@ -17,9 +17,7 @@ const ImageCard = ({ image, name }) => {
       <div className="gallery-card-image-container">
         <img alt={name} src={image} className="gallery-card-image" />
       </div>
-      <Typography color={'textPrimary'} className={classes.centeredText}>
-        {name}
-      </Typography>
+      
     </div>
   );
 };
