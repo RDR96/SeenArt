@@ -19,7 +19,7 @@
 
 .main-title-container-image-background-container {
   width: 100%;
-  background-image: url('../../assets/images/agent_background.jpg');
+  background-image: url('../../assets/images/seenGroup.jpg');
 
   /* Add the blur effect */
   filter: blur(8px);

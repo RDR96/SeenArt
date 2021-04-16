@@ -68,11 +68,11 @@
 }
 
 .agent-container-image-background-container {
-  background-image: url('../../../assets/images/agent_background.jpg');
+  background-image: url('../../../assets/images/seenGroup.jpg');
 
   /* Add the blur effect */
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
+  filter: blur(4px);
+  -webkit-filter: blur(3px);
 
   /* Full height */
   height: 670px;
