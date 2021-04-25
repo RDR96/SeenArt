@@ -9,6 +9,12 @@ class MediaService {
       name: item.slug
     }));
   }
+
+  async getImages(id){
+    const image = await API.images.getImage(id);
+
+    return image.data.link;
+  }
 }
 
 export default MediaService;

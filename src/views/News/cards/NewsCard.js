@@ -1,5 +1,6 @@
-import React from "react"
-import {Typography, makeStyles, Button} from "@material-ui/core"
+import React, { useEffect, useRef, useState } from "react"
+import { Typography, makeStyles, Button } from "@material-ui/core"
+import Services from '../../../services/index';
 
 const useStyles = makeStyles(() => ({
     infoText: {
@@ -7,19 +8,26 @@ const useStyles = makeStyles(() => ({
     },
 }))
 
-const NewsCard = ({image, name, description}) => {
-    const classes = useStyles()
+const NewsCard = ({ image, name, description }) => {
+    const classes = useStyles();
+    const [imageState, setImage] = useState('');
+
+    useEffect(() => {
+        Services.media.getImages(image).then((image) => {
+            setImage(image);
+        });
+    });
 
     return (
         <div className="news-view-card-container">
             <div className="news-view-left-container news-left-container-background">
-                <img alt={name} src={image} className="news-view-image"/>
+                <img alt={name} src={imageState} className="news-view-image" />
             </div>
             <div className="news-view-right-container">
                 <Typography variant="h3" className={classes.infoText}>
                     {name}
                 </Typography>
-                <Typography  className={classes.infoText}>
+                <Typography className={classes.infoText}>
                     {description}
                 </Typography>
 
@@ -27,7 +35,7 @@ const NewsCard = ({image, name, description}) => {
                     <Typography color="textSecondary">
                         Ver más
                     </Typography>
-                    
+
                 </Button>
 
             </div>

@@ -4,7 +4,8 @@ import Footer from 'src/components/footer';
 import Header from 'src/components/landingHeader';
 import MainTitleContainer from 'src/components/mainTitleContainer';
 import ProjectCard from './cards/ProjectCard';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Services from '../../services/index';
 
 const projects = [
   {
@@ -27,12 +28,23 @@ const projects = [
 ];
 
 const Projects = () => {
+
+  const [postsState, setPosts] = useState([]);
+
+  useEffect(() => {
+
+    Services.posts.getPosts().then((posts) => {
+      setPosts(posts);
+    });
+
+  });
+
   return (
     <div className="project-view-container">
       <Header />
       <MainTitleContainer title="PROYECTOS" />
       <div className="project-view-content-container">
-        {projects.map(project => {
+        {postsState.map(project => {
           return <ProjectCard {...project} />;
         })}
       </div>

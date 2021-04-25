@@ -1,4 +1,5 @@
 import axios from 'src/http';
+import postsAxios from 'src/http/posts';
 
 class MediaApi {
   async getMedia() {
@@ -6,4 +7,16 @@ class MediaApi {
   }
 }
 
-export { MediaApi };
+class Images {
+  async getImage(id) {
+    return await axios.get(`/media/${id}`);
+  }
+}
+
+class Posts {
+  async getPosts(){
+    return await postsAxios.get();
+  }
+}
+
+export { MediaApi, Posts, Images};

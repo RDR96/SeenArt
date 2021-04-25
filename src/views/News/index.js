@@ -4,7 +4,8 @@ import Footer from 'src/components/footer';
 import Header from 'src/components/landingHeader';
 import MainTitleContainer from 'src/components/mainTitleContainer';
 import NewsCard from './cards/NewsCard';
-import React from 'react';
+import React, { useEffect, useState }  from 'react';
+import Services from '../../services/index';
 
 const news = [
   {
@@ -21,7 +22,7 @@ const news = [
       ''
   },
   {
-    image: require('src/assets/images/project3.png'),
+    image: require('src/assets/images/project3.png'), 
     name: 'Entrega de juguetes',
     description:
       ''
@@ -29,12 +30,23 @@ const news = [
 ];
 
 const Projects = () => {
+
+  const [postsState, setPosts] = useState([]);
+
+  useEffect(() => {
+    
+    Services.posts.getPosts().then((posts) => {
+      setPosts(posts);
+    });
+
+  });
+
   return (
     <div className="news-view-container">
       <Header />
       <MainTitleContainer title="NOTICIAS" />
       <div className="news-view-content-container">
-        {news.map(newItem => {
+        {postsState.map(newItem => {
           return <NewsCard {...newItem} />;
         })}
       </div>

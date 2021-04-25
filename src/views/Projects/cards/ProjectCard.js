@@ -1,5 +1,6 @@
 import { Button, Typography } from '@material-ui/core';
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import Services from '../../../services/index';
 
 const INFO_CONTAINER_CLOSE = true;
 
@@ -8,6 +9,13 @@ const ProjectCard = ({ image, name, description }) => {
     INFO_CONTAINER_CLOSE
   );
   const infoContainerRef = useRef(null);
+  const [imageState, setImage] = useState('');
+
+  useEffect(() => {
+    Services.media.getImages(image).then((image) => {
+      setImage(image);
+    });
+  });
 
   const handleSeeMore = () => {
     setInfoContainerState(!infoContainerIsOpen);
@@ -16,7 +24,7 @@ const ProjectCard = ({ image, name, description }) => {
   return (
     <div className="project-view-card-container">
       <div className="project-view-card-image-container">
-        <img alt={name} src={image} className="project-view-image" />
+        <img alt={name} src={imageState} className="project-view-image" />
         <div className="project-view-name-container">
           <div className="project-view-name-label-container">
             <Typography variant="h3" color="textSecondary">
