@@ -1,5 +1,6 @@
 import { Button, Typography } from '@material-ui/core';
 import React, { useEffect, useRef, useState } from 'react';
+
 import Services from '../../../services/index';
 
 const INFO_CONTAINER_CLOSE = true;
@@ -48,7 +49,7 @@ const ProjectCard = ({ image, name, description }) => {
           ref={infoContainerRef}
           className="project-view-description-container"
         >
-          <Typography>{description}</Typography>
+          <Typography><div contentEditable='true' dangerouslySetInnerHTML={{__html: description}}/> </Typography>
         </div>
       )}
     </div>
